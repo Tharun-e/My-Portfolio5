@@ -70,7 +70,7 @@ section {
 }
 
 #home {
-    background: url('bg.jpg') no-repeat center center fixed;
+    
     color: #fff;
     text-align: center;
     padding: 2em 0;
@@ -277,7 +277,7 @@ section {
     font-size: 1.2em;
     margin-top: 1em;
     display: inline-block;
-    transition: background-color 0.3s ease, transform 0.3s;
+    
     border: none;
     cursor: pointer;
     margin-left: 290px;
@@ -301,7 +301,7 @@ section {
 }
 
 #certificates {
-    background: url('certif.jpg') no-repeat center center fixed;
+    
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -326,7 +326,7 @@ section {
     align-items: center;
     padding: 1em;
     margin: 1em;
-    transition: transform 0.3s, box-shadow 0.3s;
+    
 }
 
 .certificate-card:hover {
@@ -399,7 +399,7 @@ section {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s, text-decoration 0.3s;
+    
 }
 
 #contact a:hover {
@@ -407,24 +407,10 @@ section {
     text-decoration: underline;
 }
 
-/* Social Media Icons */
-.social-media {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
 
-.social-media a i {
-    font-size: 35px;
-    transition: transform 0.3s;
-    color: #fff; /* Adjust as needed */
-}
 
-.social-media a i:hover {
-    transform: scale(1.1);
-}
 
-/* Responsive CSS */
+
 @media (max-width: 1200px) {
     header .container {
         padding: 0 1em;

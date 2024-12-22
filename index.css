@@ -1,525 +1,566 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    color: #333;
-}
 
-header {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #000000;
-    padding: 0.5em 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        color: #333;
+    }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1em;
-}
+    header {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000000;
+        padding: 0.5em 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-header .logo img {
-    height: 60px;
-    width: 150px;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 1em;
-}
-
-header nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
-    padding: 0.5em 1em;
-    transition: color 0.3s, background-color 0.3s;
-}
-
-header nav ul li a:hover {
-    background-color: #555;
-    color: #fff;
-    border-radius: 5px;
-}
-
-section {
-    padding: 2em;
-    background-color: rgba(255, 255, 255, 0.9);
-    margin: 4em 0 1em;
-    max-width: 100%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#home {
-    
-    color: #fff;
-    text-align: center;
-    padding: 2em 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#home .home-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#home h1 {
-    font-size: 3em;
-    margin: 0.5em 0;
-}
-
-#home p {
-    font-size: 1.5em;
-    margin: 0.5em 0;
-}
-
-#home .home-image {
-    margin-top: 1em;
-}
-
-#home .home-image img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-#about {
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2em;
-}
-
-#about .about-container {
-    background-size: cover;
-    color: #fff;
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2em;
-}
-
-#about .about-gif {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#about .about-gif img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-#about .about-text {
-    color: #fff;
-    flex: 2;
-    text-align: left;
-}
-
-#about p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #000000;
-}
-
-.hire-me-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 0.7em 1.5em;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.1em;
-    margin-top: 1em;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.hire-me-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-#projects {
-    background-color: #f9f9f9;
-}
-
-.project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-}
-
-.project-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    max-width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-    margin: 1em;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.project-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    margin-bottom: 1em;
-    border-radius: 5px;
-}
-
-.project-card h3 {
-    margin: 0.5em;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.project-card p {
-    font-size: 1em;
-    line-height: 1.4;
-    color: #333;
-}
-
-#resume {
-    color: #a86161;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-}
-
-#resume h4 {
-    background-color: white;
-    color: #000000;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding-left: 300px;
-    font-size: 2em;
-    text-align: center;
-    justify-content: flex-start;
-}
-
-#resume .resume-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    max-width: 1200px;
-    width: 100%;
-    height: 70vh;
-    box-sizing: border-box;
-    margin-top: -50px;
-}
-
-#resume .resume-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1;
-    margin-right: 2em;
-}
-
-#resume .resume-content p {
-    padding-left: 250px;
-}
-
-#resume .resume-link {
-    background-color: #555;
-    color: #fff;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2em;
-    margin-top: 1em;
-    display: inline-block;
-    
-    border: none;
-    cursor: pointer;
-    margin-left: 290px;
-}
-
-#resume .resume-link:hover {
-    background-color: #6c5e5e;
-    transform: scale(1.05);
-}
-
-#resume .resume-gif {
-    width: 500px;
-    height: 400px;
-}
-
-#resume .resume-gif img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-#certificates {
-    
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-}
-
-.certificate-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-}
-
-.certificate-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    max-width: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-    margin: 1em;
-    
-}
-
-.certificate-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.certificate-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    margin-bottom: 1em;
-    border-radius: 5px;
-}
-
-.certificate-card h3 {
-    margin: 0.5em;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-#contact {
-    background-size: cover;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
-}
-
-#contact .contact-container {
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 2em;
-}
-
-.contact-details {
-    flex: 1;
-    text-align: left;
-}
-
-.contact-gif {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 400px;
-}
-
-.contact-gif img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-#contact p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #ffffff;
-}
-
-#contact a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    
-}
-
-#contact a:hover {
-    color: #555;
-    text-decoration: underline;
-}
-
-
-
-
-
-@media (max-width: 1200px) {
     header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
         padding: 0 1em;
     }
 
-    #resume h4, #resume .resume-link {
-        padding-left: 1em;
-        margin-left: 0;
-    }
-
-    #resume .resume-content p {
-        padding-left: 1em;
-    }
-}
-
-@media (max-width: 992px) {
-    header .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     header .logo img {
-        width: 120px;
-        height: 50px;
+        height: 60px;
+        width: 150px;
     }
 
     header nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
     }
 
     header nav ul li {
-        margin: 0;
-        width: 100%;
+        margin-left: 1em;
     }
 
     header nav ul li a {
-        padding: 0.5em 0;
-        width: 100%;
+        color: #000000;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1em;
+        padding: 0.5em 1em;
+        transition: color 0.3s, background-color 0.3s;
+    }
+
+    header nav ul li a:hover {
+        background-color: #555;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    section {
+        padding: 2em;
+        background-color: rgba(255, 255, 255, 0.9);
+        margin: 4em 0 1em;
+        max-width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #home {
+        color: #fff;
         text-align: center;
-    }
-
-    #about .about-container, #contact .contact-container, #resume .resume-container {
-        flex-direction: column;
+        padding: 2em 0;
+        min-height: 100vh;
+        display: flex;
         align-items: center;
-        padding: 1em;
+        justify-content: center;
     }
 
-    .contact-gif, .resume-gif {
-        width: 100%;
-        height: auto;
-    }
-
-    #resume h4, #resume .resume-link {
+    #home .home-content {
+        max-width: 800px;
+        margin: 0 auto;
         text-align: center;
-        padding-left: 0;
-    }
-
-    #resume .resume-content p {
-        padding-left: 0;
-    }
-
-    .project-cards, .certificate-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-card, .certificate-card {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    header .container {
-        padding: 0 0.5em;
-    }
-
-    #about .about-container, #contact .contact-container, #resume .resume-container {
-        padding: 1em;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #about .about-gif, #contact .contact-gif, #resume .resume-gif {
-        width: 100%;
-    }
-
-    .project-card img, .certificate-card img {
-        height: 150px;
-    }
-}
-
-@media (max-width: 576px) {
-    header .logo img {
-        width: 100px;
-        height: 40px;
-    }
-
-    header nav ul li a {
-        font-size: 0.9em;
-        padding: 0.5em;
     }
 
     #home h1 {
-        font-size: 2em;
+        font-size: 3em;
+        margin: 0.5em 0;
     }
 
     #home p {
+        font-size: 1.5em;
+        margin: 0.5em 0;
+    }
+
+    #home .home-image {
+        margin-top: 1em;
+    }
+
+    #home .home-image img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    #about {
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2em;
+    }
+
+    #about .about-container {
+        background-size: cover;
+        color: #fff;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2em;
+    }
+
+    #about .about-gif {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about .about-gif img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    #about .about-text {
+        color: #fff;
+        flex: 2;
+        text-align: left;
+    }
+
+    #about p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #000000;
+    }
+
+    .hire-me-button {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 0.7em 1.5em;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.1em;
+        margin-top: 1em;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .hire-me-button:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+    #projects {
+        background-color: #f9f9f9;
+    }
+
+    .project-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .project-card {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        margin: 1em;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        margin-bottom: 1em;
+        border-radius: 5px;
+    }
+
+    .project-card h3 {
+        margin: 0.5em;
+        text-align: center;
         font-size: 1.2em;
     }
-}
+
+    .project-card p {
+        font-size: 1em;
+        line-height: 1.4;
+        color: #333;
+    }
+
+    #resume {
+        color: #a86161;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+    }
+
+    #resume h4 {
+        background-color: white;
+        color: #000000;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding-left: 300px;
+        font-size: 2em;
+        text-align: center;
+        justify-content: flex-start;
+    }
+
+    #resume .resume-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 1200px;
+        width: 100%;
+        height: 70vh;
+        box-sizing: border-box;
+        margin-top: -50px;
+    }
+
+    #resume .resume-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1;
+        margin-right: 2em;
+    }
+
+    #resume .resume-content p {
+        padding-left: 250px;
+    }
+
+    #resume .resume-link {
+        background-color: #555;
+        color: #fff;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.2em;
+        margin-top: 1em;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+        margin-left: 290px;
+    }
+
+    #resume .resume-link:hover {
+        background-color: #6c5e5e;
+        transform: scale(1.05);
+    }
+
+    #resume .resume-gif {
+        width: 500px;
+        height: 400px;
+    }
+
+    #resume .resume-gif img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    #certificates {
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+    }
+
+    .certificate-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .certificate-card {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .certificate-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .certificate-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        margin-bottom: 1em;
+        border-radius: 5px;
+    }
+
+    .certificate-card h3 {
+        margin: 0.5em;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    #contact {
+        background-size: cover;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+    }
+
+    #contact .contact-container {
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .contact-details {
+        flex: 1;
+        text-align: left;
+    }
+
+    .contact-gif {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 400px;
+    }
+
+    .contact-gif img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    #contact p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #ffffff;
+    }
+
+    #contact a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    #contact a:hover {
+        color: #555;
+        text-decoration: underline;
+    }
+
+    @media (max-width: 1200px) {
+        header .container {
+            padding: 0 1em;
+        }
+
+        #resume h4,
+        #resume .resume-link {
+            padding-left: 1em;
+            margin-left: 0;
+        }
+
+        #resume .resume-content p {
+            padding-left: 1em;
+        }
+    }
+
+    @media (max-width: 992px) {
+        header .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        header .logo img {
+            width: 120px;
+            height: 50px;
+        }
+
+        header nav ul {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        header nav ul li {
+            margin: 0;
+            width: 100%;
+        }
+
+        header nav ul li a {
+            padding: 0.5em 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        #about .about-container,
+        #contact .contact-container,
+        #resume .resume-container {
+            flex-direction: column;
+            align-items: center;
+            padding: 1em;
+        }
+
+        .contact-gif,
+        .resume-gif {
+            width: 100%;
+            height: auto;
+        }
+
+        #resume h4,
+        #resume .resume-link {
+            text-align: center;
+            padding-left: 0;
+        }
+
+        #resume .resume-content p {
+            padding-left: 0;
+        }
+
+        .project-cards,
+        .certificate-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project-card,
+        .certificate-card {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        header .container {
+            padding: 0 0.5em;
+        }
+
+        #about .about-container,
+        #contact .contact-container,
+        #resume .resume-container {
+            padding: 1em;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #about .about-gif,
+        #contact .contact-gif,
+        #resume .resume-gif {
+            width: 100%;
+        }
+
+        .project-card img,
+        .certificate-card img {
+            height: 150px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        header .logo img {
+            width: 100px;
+            height: 40px;
+        }
+
+        header nav ul li a {
+            font-size: 0.9em;
+            padding: 0.5em;
+        }
+
+        #home h1 {
+            font-size: 2em;
+        }
+
+        #home p {
+            font-size: 1.2em;
+        }
+
+        .resume-container,
+        .contact-container,
+        .about-container {
+            flex-direction: column;
+            padding: 1em;
+            align-items: center;
+        }
+
+        .resume-gif,
+        .contact-gif,
+        .about-gif {
+            width: 100%;
+            margin-top: 1em;
+        }
+
+        #resume h4 {
+            padding-left: 0;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        #resume .resume-link {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        #resume .resume-content p {
+            padding-left: 0;
+            text-align: center;
+        }
+
+        .project-card,
+        .certificate-card {
+            width: 100%;
+        }
+    }
+
